@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8FMDIWw0tTCS/B7M2MiDQRINvKrOh4C+WSR4+lTYOFE=",
+  "Source": "BlackArm.API",
+  "BasePath": "_content/BlackArm.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,15 @@
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\bin\Debug\net8.0\BlackArm.Application.deps.json
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\bin\Debug\net8.0\BlackArm.Application.dll
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\bin\Debug\net8.0\BlackArm.Application.pdb
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\bin\Debug\net8.0\BlackArm.Domain.dll
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\bin\Debug\net8.0\BlackArm.Domain.pdb
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\obj\Debug\net8.0\BlackArm.Application.csproj.AssemblyReference.cache
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\obj\Debug\net8.0\BlackArm.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\obj\Debug\net8.0\BlackArm.Application.AssemblyInfoInputs.cache
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\obj\Debug\net8.0\BlackArm.Application.AssemblyInfo.cs
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\obj\Debug\net8.0\BlackArm.Application.csproj.CoreCompileInputs.cache
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\obj\Debug\net8.0\BlackArm.91AB2EFD.Up2Date
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\obj\Debug\net8.0\BlackArm.Application.dll
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\obj\Debug\net8.0\refint\BlackArm.Application.dll
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\obj\Debug\net8.0\BlackArm.Application.pdb
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\obj\Debug\net8.0\ref\BlackArm.Application.dll

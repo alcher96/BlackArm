@@ -1,0 +1,6 @@
+@BlackArm.API_HostAddress = http://localhost:5276
+
+GET {{BlackArm.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

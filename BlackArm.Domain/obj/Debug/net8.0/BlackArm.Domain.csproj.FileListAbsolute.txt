@@ -1,0 +1,11 @@
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Domain\bin\Debug\net8.0\BlackArm.Domain.deps.json
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Domain\bin\Debug\net8.0\BlackArm.Domain.dll
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Domain\bin\Debug\net8.0\BlackArm.Domain.pdb
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Domain\obj\Debug\net8.0\BlackArm.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Domain\obj\Debug\net8.0\BlackArm.Domain.AssemblyInfoInputs.cache
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Domain\obj\Debug\net8.0\BlackArm.Domain.AssemblyInfo.cs
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Domain\obj\Debug\net8.0\BlackArm.Domain.csproj.CoreCompileInputs.cache
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Domain\obj\Debug\net8.0\BlackArm.Domain.dll
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Domain\obj\Debug\net8.0\refint\BlackArm.Domain.dll
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Domain\obj\Debug\net8.0\BlackArm.Domain.pdb
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Domain\obj\Debug\net8.0\ref\BlackArm.Domain.dll
