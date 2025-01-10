@@ -1,6 +1,7 @@
 using AutoMapper;
 using BlackArm.API.Controllers;
 using BlackArm.API.DTOs;
+using BlackArm.API.DTOs.CompetitionsDto;
 using BlackArm.API.Extensions;
 using BlackArm.Domain.Models;
 
@@ -23,6 +24,10 @@ public class MappingProfile : Profile
         CreateMap<ArmWrestlerForCreationDto, ArmWrestler>();
         CreateMap<ArmWrestlerForUpdateDto, ArmWrestler>();
        // CreateMap<ArmwrestlerForUpdateDto, ArmWrestler>().ReverseMap();
+       
+       CreateMap<Competition, CompetitionDto>();
+       CreateMap<CompetitionForCreationDto, Competition>();
+       CreateMap<ComtetitionForUpdateDto, Competition>();
 
 
     }
