@@ -134,6 +134,9 @@ namespace BlackArm.API.Migrations
                     b.Property<Guid>("CompetitionId")
                         .HasColumnType("uuid");
 
+                    b.Property<Guid>("WinnerId")
+                        .HasColumnType("uuid");
+
                     b.Property<Guid>("Wrestler1Id")
                         .HasColumnType("uuid");
 
@@ -143,6 +146,8 @@ namespace BlackArm.API.Migrations
                     b.HasKey("FightId");
 
                     b.HasIndex("CompetitionId");
+
+                    b.HasIndex("WinnerId");
 
                     b.HasIndex("Wrestler1Id");
 
@@ -236,6 +241,12 @@ namespace BlackArm.API.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("BlackArm.Domain.Models.ArmWrestler", "Winner")
+                        .WithMany("FightsWon")
+                        .HasForeignKey("WinnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("BlackArm.Domain.Models.ArmWrestler", "Wrestler1")
                         .WithMany("FightsAsWrestler1")
                         .HasForeignKey("Wrestler1Id")
@@ -249,6 +260,8 @@ namespace BlackArm.API.Migrations
                         .IsRequired();
 
                     b.Navigation("Competition");
+
+                    b.Navigation("Winner");
 
                     b.Navigation("Wrestler1");
 
@@ -298,6 +311,8 @@ namespace BlackArm.API.Migrations
                     b.Navigation("FightsAsWrestler1");
 
                     b.Navigation("FightsAsWrestler2");
+
+                    b.Navigation("FightsWon");
 
                     b.Navigation("RadarGraph")
                         .IsRequired();

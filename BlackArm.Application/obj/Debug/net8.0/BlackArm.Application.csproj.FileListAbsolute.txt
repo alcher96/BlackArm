@@ -29,3 +29,4 @@ C:\Users\Alex\RiderProjects\BlackArm\BlackArm.Application\obj\Debug\net8.0\Black
 C:\Users\Alex\RiderProjects\BlackArm\BlackArm.Application\obj\Debug\net8.0\refint\BlackArm.Application.dll
 C:\Users\Alex\RiderProjects\BlackArm\BlackArm.Application\obj\Debug\net8.0\BlackArm.Application.pdb
 C:\Users\Alex\RiderProjects\BlackArm\BlackArm.Application\obj\Debug\net8.0\ref\BlackArm.Application.dll
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Application\obj\Debug\net8.0\BlackArm.Application.sourcelink.json

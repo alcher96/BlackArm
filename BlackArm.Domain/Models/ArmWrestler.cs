@@ -47,9 +47,13 @@ public class ArmWrestler
     
     [InverseProperty("Wrestler2")]
     public virtual ICollection<Fight> FightsAsWrestler2 { get; set; }
-    [InverseProperty("Winner")]
-    public virtual ICollection<Round> RoundsWon { get; set; }
     
+    
+    [InverseProperty("Winner")]
+    public virtual ICollection<Round>? RoundsWon { get; set; }
+    
+    
+    public ICollection<Fight> FightsWon { get; set; }
     
     // One-to-One relationship with RadarGraph
     public virtual RadarGraph RadarGraph { get; set; }

@@ -63,10 +63,10 @@ public class ArmWrestlerController : ControllerBase
     [ServiceFilter(typeof(ValidateArmwrestlerExistsAttribute))]
     public async Task<IActionResult> UpdateArmWrestler(Guid id, [FromBody] ArmWrestlerForUpdateDto armWrestler)
     {
-       var armWrestlerEntity = await _repository.ArmWrestler.GetWrestlerAsync(id, trackChanges:true);
-      // var armWrestlerEntity = HttpContext.Items["armWrestler"] as ArmWrestler;
+        var armWrestlerEntity = await _repository.ArmWrestler.GetWrestlerAsync(id, trackChanges:true);
+        // var armWrestlerEntity = HttpContext.Items["armWrestler"] as ArmWrestler;
         _mapper.Map(armWrestler, armWrestlerEntity);
-       await _repository.SaveAsync();
+        await _repository.SaveAsync();
         return NoContent();
     }
 
@@ -81,6 +81,4 @@ public class ArmWrestlerController : ControllerBase
         _repository.SaveAsync();
         return NoContent();
     }
-    
-    
 }
