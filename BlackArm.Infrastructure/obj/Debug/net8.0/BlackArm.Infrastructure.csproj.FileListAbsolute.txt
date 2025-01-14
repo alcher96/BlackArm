@@ -37,3 +37,4 @@ C:\Users\Alex\RiderProjects\BlackArm\BlackArm.Infrastructure\obj\Debug\net8.0\re
 C:\Users\Alex\RiderProjects\BlackArm\BlackArm.Infrastructure\obj\Debug\net8.0\BlackArm.Infrastructure.pdb
 C:\Users\Alex\RiderProjects\BlackArm\BlackArm.Infrastructure\obj\Debug\net8.0\BlackArm.Infrastructure.genruntimeconfig.cache
 C:\Users\Alex\RiderProjects\BlackArm\BlackArm.Infrastructure\obj\Debug\net8.0\ref\BlackArm.Infrastructure.dll
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.Infrastructure\obj\Debug\net8.0\BlackArm.Infrastructure.sourcelink.json

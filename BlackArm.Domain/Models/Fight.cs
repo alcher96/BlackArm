@@ -19,12 +19,17 @@ public class Fight
     [Required]
     [ForeignKey("Wrestler2")]
     public Guid Wrestler2Id { get; set; }
+    
+    [Required]
+    [ForeignKey("Winner")]
+    public Guid WinnerId { get; set; }
 
     // Navigation properties:
     public virtual Competition Competition { get; set; }
     public virtual ArmWrestler Wrestler1 { get; set; }
     public virtual ArmWrestler Wrestler2 { get; set; }
+    public ArmWrestler Winner { get; set; }
 
     // Navigation property: One Fight to Many Rounds
-    public virtual ICollection<Round> Rounds { get; set; } = new List<Round>();
+    public virtual ICollection<Round> Rounds { get; set; }
 }

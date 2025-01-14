@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlackArm.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d53387efec23d4c20c5699b89f45ce5d73867b2b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db0870b32e26457cb852980595735970f44dcf03")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlackArm.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlackArm.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
