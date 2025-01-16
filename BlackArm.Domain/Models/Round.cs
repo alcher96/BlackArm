@@ -9,7 +9,7 @@ public class Round
     public Guid RoundId { get; set; }
     
     [Required]
-    [ForeignKey("Fight")]
+  //  [ForeignKey("Fight")]
     public Guid FightId { get; set; }
     
     [Required]
@@ -17,15 +17,19 @@ public class Round
     public int RoundNumber { get; set; }
 
     [Required]
-    [ForeignKey("Winner")] // Foreign key to Wrestler (winner)
     public Guid WinnerId { get; set; }
 
     [Required]
-    [ForeignKey("StyleUsed")] // Foreign key to WrestlingStyle
     public Guid StyleUsedId { get; set; }
 
-    // Navigation properties:
-    public virtual Fight Fight { get; set; }
-    public virtual ArmWrestler Winner { get; set; }
-    public virtual WrestlingStyle StyleUsed { get; set; }
+    // Navigation Properties
+    [ForeignKey("FightId")]
+    public Fight Fight { get; set; }
+
+    [ForeignKey("WinnerId")]
+    [InverseProperty("RoundsWon")]
+    public ArmWrestler Winner { get; set; }
+
+    [ForeignKey("StyleUsedId")]
+    public WrestlingStyle StyleUsed { get; set; }
 }

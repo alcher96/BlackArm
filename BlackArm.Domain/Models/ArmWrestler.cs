@@ -41,20 +41,31 @@ public class ArmWrestler
     public int Losses { get; set; }
     
     
-    // Navigation properties for relationships (optional, but useful for querying)
     [InverseProperty("Wrestler1")]
-    public virtual ICollection<Fight> FightsAsWrestler1 { get; set; }
+    public  ICollection<Fight> FightsAsWrestler1 { get; set; }
+    
     
     [InverseProperty("Wrestler2")]
-    public virtual ICollection<Fight> FightsAsWrestler2 { get; set; }
+    public  ICollection<Fight> FightsAsWrestler2 { get; set; }
     
     
     [InverseProperty("Winner")]
-    public virtual ICollection<Round>? RoundsWon { get; set; }
-    
-    
+     public  ICollection<Round> RoundsWon { get; set; }
+     
+    [InverseProperty("Winner")]
     public ICollection<Fight> FightsWon { get; set; }
+   
+    
     
     // One-to-One relationship with RadarGraph
     public virtual RadarGraph RadarGraph { get; set; }
+    
+    
+    public ArmWrestler()
+    {
+        FightsAsWrestler1 = new HashSet<Fight>();
+        FightsAsWrestler2 = new HashSet<Fight>();
+        FightsWon = new HashSet<Fight>();
+        RoundsWon = new HashSet<Round>();
+    }
 }

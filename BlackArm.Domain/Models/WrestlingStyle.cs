@@ -11,6 +11,7 @@ public class WrestlingStyle
     [StringLength(255)] // Adjust the length as needed
     public string StyleName { get; set; }
 
-    // Navigation property (optional if you need to access Rounds from Style)
-    public virtual ICollection<Round> RoundsUsedIn { get; set; }
+    // Navigation Properties
+    public ICollection<Fight> FightsUsingStyle { get; set; }
+    public ICollection<Round> RoundsUsingStyle { get; set; }
 }

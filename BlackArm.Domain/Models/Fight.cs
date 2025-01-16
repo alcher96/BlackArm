@@ -9,27 +9,43 @@ public class Fight
     public Guid FightId { get; set; }
 
     [Required]
-    [ForeignKey("Competition")]
+  //  [ForeignKey("Competition")]
     public Guid CompetitionId { get; set; }
     
     [Required]
-    [ForeignKey("Wrestler1")]
+  //  [ForeignKey("Wrestler1")]
     public Guid Wrestler1Id { get; set; }
 
     [Required]
-    [ForeignKey("Wrestler2")]
+  //  [ForeignKey("Wrestler2")]
     public Guid Wrestler2Id { get; set; }
     
     [Required]
-    [ForeignKey("Winner")]
+  //  [ForeignKey("FightWinner")]
     public Guid WinnerId { get; set; }
+    
+    public Guid StyleUsedId { get; set; }
 
-    // Navigation properties:
-    public virtual Competition Competition { get; set; }
-    public virtual ArmWrestler Wrestler1 { get; set; }
-    public virtual ArmWrestler Wrestler2 { get; set; }
+    // Navigation Properties
+    [ForeignKey("CompetitionId")]
+    public Competition Competition { get; set; }
+
+    [ForeignKey("Wrestler1Id")]
+    public ArmWrestler Wrestler1 { get; set; }
+
+    [ForeignKey("Wrestler2Id")]
+    public ArmWrestler Wrestler2 { get; set; }
+
+    [ForeignKey("WinnerId")]
     public ArmWrestler Winner { get; set; }
 
-    // Navigation property: One Fight to Many Rounds
-    public virtual ICollection<Round> Rounds { get; set; }
+    [ForeignKey("StyleUsedId")]
+    public WrestlingStyle StyleUsed { get; set; }
+
+    public ICollection<Round> Rounds { get; set; }
+    
+    public Fight()
+    {
+      Rounds = new HashSet<Round>();
+    }
 }

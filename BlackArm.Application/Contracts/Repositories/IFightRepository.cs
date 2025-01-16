@@ -10,5 +10,5 @@ public interface IFightRepository
     
     void CreateFightForCompetition(Guid CompetitionId, Fight fight);
     
-    void DeleteFight(Guid FightId);
+    void DeleteFight(Fight Fight);
 }

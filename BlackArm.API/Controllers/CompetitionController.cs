@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BlackArm.API.Controllers;
 
 
-[Route("api/[controller]")]
+[Route("api/competitions")]
 [ApiController]
 public class CompetitionController : ControllerBase
 {

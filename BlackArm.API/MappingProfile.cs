@@ -2,6 +2,7 @@ using AutoMapper;
 using BlackArm.API.Controllers;
 using BlackArm.API.DTOs;
 using BlackArm.API.DTOs.CompetitionsDto;
+using BlackArm.API.DTOs.FightsDto;
 using BlackArm.API.Extensions;
 using BlackArm.Domain.Models;
 
@@ -28,6 +29,10 @@ public class MappingProfile : Profile
        CreateMap<Competition, CompetitionDto>();
        CreateMap<CompetitionForCreationDto, Competition>();
        CreateMap<ComtetitionForUpdateDto, Competition>();
+
+
+       CreateMap<Fight, FightDto>();
+       CreateMap<FightForCreatingDto, Fight>();
 
 
     }

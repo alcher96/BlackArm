@@ -9,7 +9,7 @@ public class RadarGraph
     public Guid GraphId { get; set; }
     
     [Required]
-    [ForeignKey("Wrestler")] // Foreign Key and also used for the one-to-one
+   // [ForeignKey("Wrestler")] // Foreign Key and also used for the one-to-one
     public Guid WrestlerId { get; set; }
     
     [Range(1, 10)]

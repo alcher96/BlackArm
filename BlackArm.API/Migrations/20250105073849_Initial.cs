@@ -90,7 +90,8 @@ namespace BlackArm.API.Migrations
                     FightId = table.Column<Guid>(type: "uuid", nullable: false),
                     CompetitionId = table.Column<Guid>(type: "uuid", nullable: false),
                     Wrestler1Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Wrestler2Id = table.Column<Guid>(type: "uuid", nullable: false)
+                    Wrestler2Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    WinnerId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -6,5 +6,7 @@ public interface IRepositoryManager
     
     ICompetitionRepository Competition { get; }
     
+    IFightRepository Fight { get; }
+    
     Task SaveAsync();
 }

@@ -134,6 +134,9 @@ namespace BlackArm.API.Migrations
                     b.Property<Guid>("CompetitionId")
                         .HasColumnType("uuid");
 
+                    b.Property<Guid>("StyleUsedId")
+                        .HasColumnType("uuid");
+
                     b.Property<Guid>("WinnerId")
                         .HasColumnType("uuid");
 
@@ -146,6 +149,8 @@ namespace BlackArm.API.Migrations
                     b.HasKey("FightId");
 
                     b.HasIndex("CompetitionId");
+
+                    b.HasIndex("StyleUsedId");
 
                     b.HasIndex("WinnerId");
 
@@ -231,6 +236,23 @@ namespace BlackArm.API.Migrations
                     b.HasKey("StyleId");
 
                     b.ToTable("WrestlingStyle");
+
+                    b.HasData(
+                        new
+                        {
+                            StyleId = new Guid("8e66d889-7055-4024-b9d6-58732c3bddd0"),
+                            StyleName = "Top roll"
+                        },
+                        new
+                        {
+                            StyleId = new Guid("ad870477-c1c7-4310-b512-944e68b4a894"),
+                            StyleName = "Hook"
+                        },
+                        new
+                        {
+                            StyleId = new Guid("71d60165-142c-47a5-aeba-265d771cfbea"),
+                            StyleName = "Kings move"
+                        });
                 });
 
             modelBuilder.Entity("BlackArm.Domain.Models.Fight", b =>
@@ -238,6 +260,12 @@ namespace BlackArm.API.Migrations
                     b.HasOne("BlackArm.Domain.Models.Competition", "Competition")
                         .WithMany("Fights")
                         .HasForeignKey("CompetitionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BlackArm.Domain.Models.WrestlingStyle", "StyleUsed")
+                        .WithMany("FightsUsingStyle")
+                        .HasForeignKey("StyleUsedId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -260,6 +288,8 @@ namespace BlackArm.API.Migrations
                         .IsRequired();
 
                     b.Navigation("Competition");
+
+                    b.Navigation("StyleUsed");
 
                     b.Navigation("Winner");
 
@@ -288,7 +318,7 @@ namespace BlackArm.API.Migrations
                         .IsRequired();
 
                     b.HasOne("BlackArm.Domain.Models.WrestlingStyle", "StyleUsed")
-                        .WithMany("RoundsUsedIn")
+                        .WithMany("RoundsUsingStyle")
                         .HasForeignKey("StyleUsedId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -332,7 +362,9 @@ namespace BlackArm.API.Migrations
 
             modelBuilder.Entity("BlackArm.Domain.Models.WrestlingStyle", b =>
                 {
-                    b.Navigation("RoundsUsedIn");
+                    b.Navigation("FightsUsingStyle");
+
+                    b.Navigation("RoundsUsingStyle");
                 });
 #pragma warning restore 612, 618
         }
