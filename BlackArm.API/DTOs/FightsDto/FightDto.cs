@@ -13,4 +13,6 @@ public class FightDto
     
 
     public Guid WinnerId { get; set; }
+
+
 }

@@ -123,6 +123,20 @@ namespace BlackArm.API.Migrations
                     b.HasKey("CompetitionId");
 
                     b.ToTable("Competition");
+
+                    b.HasData(
+                        new
+                        {
+                            CompetitionId = new Guid("e85a1433-87bc-42b5-85c4-1c9bc2ac66fc"),
+                            CompetitionDate = new DateTime(2018, 8, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CompetitionName = "King of the table 1"
+                        },
+                        new
+                        {
+                            CompetitionId = new Guid("dfc6e35c-6057-4fa6-8c55-5332bb19d357"),
+                            CompetitionDate = new DateTime(2019, 8, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CompetitionName = "East vs West 1"
+                        });
                 });
 
             modelBuilder.Entity("BlackArm.Domain.Models.Fight", b =>

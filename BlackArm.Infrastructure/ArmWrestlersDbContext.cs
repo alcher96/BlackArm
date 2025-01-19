@@ -89,6 +89,7 @@ public class ArmWrestlersDbContext : DbContext
 
         modelBuilder.ApplyConfiguration(new ArmWrestlerConfiguration());
         modelBuilder.ApplyConfiguration(new WrestlingStyleConfiguration());
+        modelBuilder.ApplyConfiguration(new CompetitionConfiguration());
 
         base.OnModelCreating(modelBuilder);
     }

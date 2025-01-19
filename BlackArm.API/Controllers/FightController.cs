@@ -21,7 +21,7 @@ public class FightController : ControllerBase
         _mapper = mapper;
     }
 
-    [HttpGet("{Id}", Name = "GetFightForCompetition")]
+    [HttpGet("{id}", Name = "GetFightForCompetition")]
     public async Task<IActionResult> GetFightForCompetition(Guid competitionId, Guid id,
         CancellationToken cancellationToken)
     {
@@ -53,13 +53,15 @@ public class FightController : ControllerBase
             _logger.LogError("Invalid model state");
             return UnprocessableEntity(ModelState);
         }
+
         
         var competition = await _repository.Competition.GetCompetitionAsync(competitionId, trackChanges: false);
         var fightEntity = _mapper.Map<Fight>(fight);
         _repository.Fight.CreateFightForCompetition(competitionId, fightEntity);
         await _repository.SaveAsync();
         var fightToReturn = _mapper.Map<FightDto>(fightEntity);
-        
+
+
         return CreatedAtRoute("GetFightForCompetition", new {competitionId, id = fightToReturn.FightId}, fightToReturn);
     }
 }
