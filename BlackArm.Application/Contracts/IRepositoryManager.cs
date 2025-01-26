@@ -6,5 +6,10 @@ public interface IRepositoryManager
     
     ICompetitionRepository Competition { get; }
     
+
+
+    IFightRepository Fight { get; }
+    
+    IRoundRepository Round { get; }
     Task SaveAsync();
 }

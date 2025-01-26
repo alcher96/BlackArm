@@ -11,6 +11,7 @@ namespace BlackArm.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[ResponseCache(CacheProfileName = "120SecondsDuration")]
 public class ArmWrestlerController : ControllerBase
 {
     private readonly IRepositoryManager _repository;

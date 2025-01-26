@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlackArm.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d53387efec23d4c20c5699b89f45ce5d73867b2b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e46306076c56117eaf6857c29fe6217aca528127")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlackArm.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlackArm.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

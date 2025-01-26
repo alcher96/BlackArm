@@ -24,12 +24,31 @@ public class Fight
     [ForeignKey("Winner")]
     public Guid WinnerId { get; set; }
 
+    public string BestOf { get; set; }
+    
+    public string Hand { get; set; }
+  
+  
+
+
+
     // Navigation properties:
     public virtual Competition Competition { get; set; }
     public virtual ArmWrestler Wrestler1 { get; set; }
     public virtual ArmWrestler Wrestler2 { get; set; }
     public ArmWrestler Winner { get; set; }
 
+
     // Navigation property: One Fight to Many Rounds
-    public virtual ICollection<Round> Rounds { get; set; }
+   // public virtual ICollection<Round> Rounds { get; set; }
+
+ 
+
+    public ICollection<Round> Rounds { get; set; }
+    
+    public Fight()
+    {
+      Rounds = new HashSet<Round>();
+    }
+
 }

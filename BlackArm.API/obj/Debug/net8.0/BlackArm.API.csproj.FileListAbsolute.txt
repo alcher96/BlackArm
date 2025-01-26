@@ -334,3 +334,4 @@ C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\obj\Debug\net8.0\BlackArm.API.
 C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\obj\Debug\net8.0\BlackArm.API.genruntimeconfig.cache
 C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\obj\Debug\net8.0\ref\BlackArm.API.dll
 C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.API\obj\Debug\net8.0\BlackArm.API.sourcelink.json
+C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.API\bin\Debug\net8.0\Marvin.Cache.Headers.dll

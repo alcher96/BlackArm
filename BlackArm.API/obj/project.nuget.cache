@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "5mErvszmPfk=",
+  "dgSpecHash": "dQvGcfOWXTM=",
   "success": true,
   "projectFilePath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\BlackArm.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alche\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\alche\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512",
     "C:\\Users\\alche\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\alche\\.nuget\\packages\\marvin.cache.headers\\7.2.0\\marvin.cache.headers.7.2.0.nupkg.sha512",
     "C:\\Users\\alche\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\9.0.0\\microsoft.aspnetcore.jsonpatch.9.0.0.nupkg.sha512",
     "C:\\Users\\alche\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\8.0.11\\microsoft.aspnetcore.mvc.newtonsoftjson.8.0.11.nupkg.sha512",
     "C:\\Users\\alche\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

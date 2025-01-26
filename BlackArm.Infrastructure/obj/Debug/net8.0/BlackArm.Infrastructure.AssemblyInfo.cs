@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlackArm.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d53387efec23d4c20c5699b89f45ce5d73867b2b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0e1aefb46ff137b98c052f0a9e455c1446e6cc0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlackArm.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlackArm.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -27,4 +27,20 @@ public static class ServiceExtensions
     
     public static void ConfigureLoggerService(this IServiceCollection services) =>
     services.AddSingleton<ILoggerManager, LoggerManager>();
+    
+    
+    public static void ConfigureResponseCaching(this IServiceCollection services) =>
+    services.AddResponseCaching();
+
+    public static void ConfigureHttpCacheHeaders(this IServiceCollection services) =>
+        services.AddHttpCacheHeaders(
+            (expirationOpt) =>
+            {
+                expirationOpt.MaxAge = 65;
+                expirationOpt.CacheLocation = Marvin.Cache.Headers.CacheLocation.Private;
+            },
+            (validationOpt) =>
+            {
+                validationOpt.MustRevalidate = true;
+            });
 }

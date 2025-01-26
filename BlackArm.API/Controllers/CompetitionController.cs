@@ -1,7 +1,9 @@
 using AutoMapper;
+using BlackArm.API.ActionFilters;
 using BlackArm.API.DTOs.CompetitionsDto;
 using BlackArm.Application.Contracts;
 using BlackArm.Domain.Models;
+using Marvin.Cache.Headers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlackArm.API.Controllers;
@@ -9,6 +11,9 @@ namespace BlackArm.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[ResponseCache(CacheProfileName = "120SecondsDuration")]
+[HttpCacheExpiration(CacheLocation=CacheLocation.Public, MaxAge =60)]
+[HttpCacheValidation(MustRevalidate =false)]
 public class CompetitionController : ControllerBase
 {
     private readonly ILoggerManager _logger;
@@ -49,7 +54,8 @@ public class CompetitionController : ControllerBase
         
         var compToReturn = _mapper.Map<CompetitionDto>(competitionEntity);
 
-        return CreatedAtRoute("CompetitionById", new { Id = compToReturn.CompetitionId }, compToReturn);
+        //return CreatedAtRoute("CompetitionById", new { Id = compToReturn.CompetitionId }, compToReturn);
+        return Ok(compToReturn);
     }
 
     [HttpPut("{id}")]

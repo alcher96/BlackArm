@@ -3,6 +3,7 @@ using BlackArm.API.Extensions;
 using BlackArm.Application.Contracts;
 using BlackArm.Application.LoggerService;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Mvc;
 using NLog;
 using NLog.Extensions.Logging;
 
@@ -15,12 +16,19 @@ builder.Services.ConfigureCors();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureLoggerService();
+
 builder.Services.AddScoped<ValidateArmwrestlerExistsAttribute>();
 builder.Services.AddScoped<ValidationFilterAttribute>();
+builder.Services.ConfigureResponseCaching();
+builder.Services.ConfigureHttpCacheHeaders();
 builder.Services.AddControllers(config =>
 {
     config.RespectBrowserAcceptHeader = true;
     config.ReturnHttpNotAcceptable = true;
+    config.CacheProfiles.Add("120SecondsDuration" , new CacheProfile
+    {
+        Duration = 120
+    });
 })
     .AddNewtonsoftJson()
     .AddXmlDataContractSerializerFormatters();
@@ -41,9 +49,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseCors("CorsPolicy");
+
+app.UseRouting();
+app.UseResponseCaching();
+app.UseHttpCacheHeaders();
 app.UseForwardedHeaders(new ForwardedHeadersOptions
 {
     ForwardedHeaders = ForwardedHeaders.All
