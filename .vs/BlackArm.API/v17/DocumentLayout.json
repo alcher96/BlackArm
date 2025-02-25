@@ -1,45 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\",
+  "WorkspaceRootPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alche\\riderprojects\\blackarm.api\\blackarm.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|solutionrelative:blackarm.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84950E05-84F8-4E9E-AF7C-1E045FEA8E61}|BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj|c:\\users\\alex\\riderprojects\\blackarm\\blackarm.infrastructure\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84950E05-84F8-4E9E-AF7C-1E045FEA8E61}|BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj|solutionrelative:blackarm.infrastructure\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alche\\riderprojects\\blackarm.api\\blackarm.api\\controllers\\competitioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|solutionrelative:blackarm.api\\controllers\\competitioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84950E05-84F8-4E9E-AF7C-1E045FEA8E61}|BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj|c:\\users\\alche\\riderprojects\\blackarm.api\\blackarm.infrastructure\\armwrestlersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{84950E05-84F8-4E9E-AF7C-1E045FEA8E61}|BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj|c:\\users\\alex\\riderprojects\\blackarm\\blackarm.infrastructure\\armwrestlersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84950E05-84F8-4E9E-AF7C-1E045FEA8E61}|BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj|solutionrelative:blackarm.infrastructure\\armwrestlersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alche\\riderprojects\\blackarm.api\\blackarm.api\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{84950E05-84F8-4E9E-AF7C-1E045FEA8E61}|BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj|c:\\users\\alex\\riderprojects\\blackarm\\blackarm.infrastructure\\blackarm.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{84950E05-84F8-4E9E-AF7C-1E045FEA8E61}|BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj|solutionrelative:blackarm.infrastructure\\blackarm.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alex\\riderprojects\\blackarm\\blackarm.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|solutionrelative:blackarm.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alex\\riderprojects\\blackarm\\blackarm.api\\controllers\\competitioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|solutionrelative:blackarm.api\\controllers\\competitioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alex\\riderprojects\\blackarm\\blackarm.api\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|solutionrelative:blackarm.api\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alche\\riderprojects\\blackarm.api\\blackarm.api\\blackarm.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alex\\riderprojects\\blackarm\\blackarm.api\\blackarm.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|solutionrelative:blackarm.api\\blackarm.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alche\\riderprojects\\blackarm.api\\blackarm.api\\dtos\\fightsdto\\fightforcreatingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alex\\riderprojects\\blackarm\\blackarm.api\\dtos\\fightsdto\\fightforcreatingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|solutionrelative:blackarm.api\\dtos\\fightsdto\\fightforcreatingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alche\\riderprojects\\blackarm.api\\blackarm.api\\attributes\\notequalattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alex\\riderprojects\\blackarm\\blackarm.api\\attributes\\notequalattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|solutionrelative:blackarm.api\\attributes\\notequalattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alche\\riderprojects\\blackarm.api\\blackarm.api\\controllers\\fightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alex\\riderprojects\\blackarm\\blackarm.api\\controllers\\fightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|solutionrelative:blackarm.api\\controllers\\fightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alche\\riderprojects\\blackarm.api\\blackarm.api\\dtos\\fightsdto\\fightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|c:\\users\\alex\\riderprojects\\blackarm\\blackarm.api\\dtos\\fightsdto\\fightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A02223F-3204-452A-A2B0-E68290DEFF96}|BlackArm.API\\BlackArm.API.csproj|solutionrelative:blackarm.api\\dtos\\fightsdto\\fightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84950E05-84F8-4E9E-AF7C-1E045FEA8E61}|BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj|c:\\users\\alche\\riderprojects\\blackarm.api\\blackarm.infrastructure\\repositories\\fightrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{84950E05-84F8-4E9E-AF7C-1E045FEA8E61}|BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj|c:\\users\\alex\\riderprojects\\blackarm\\blackarm.infrastructure\\repositories\\fightrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84950E05-84F8-4E9E-AF7C-1E045FEA8E61}|BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj|solutionrelative:blackarm.infrastructure\\repositories\\fightrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,15 +58,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "BlackArm.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj",
+              "RelativeToolTip": "BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-29T11:02:05.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "BlackArm.Infrastructure\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\ApplicationUser.cs",
+              "RelativeToolTip": "BlackArm.Infrastructure\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T11:06:35.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ArmWrestlersDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Infrastructure\\ArmWrestlersDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\ArmWrestlersDbContext.cs",
               "RelativeDocumentMoniker": "BlackArm.Infrastructure\\ArmWrestlersDbContext.cs",
-              "ToolTip": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Infrastructure\\ArmWrestlersDbContext.cs",
+              "ToolTip": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\ArmWrestlersDbContext.cs",
               "RelativeToolTip": "BlackArm.Infrastructure\\ArmWrestlersDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -67,11 +101,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CompetitionController.cs",
-              "DocumentMoniker": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\Controllers\\CompetitionController.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\Controllers\\CompetitionController.cs",
               "RelativeDocumentMoniker": "BlackArm.API\\Controllers\\CompetitionController.cs",
-              "ToolTip": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\Controllers\\CompetitionController.cs",
+              "ToolTip": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\Controllers\\CompetitionController.cs",
               "RelativeToolTip": "BlackArm.API\\Controllers\\CompetitionController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -80,11 +114,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BlackArm.API",
-              "DocumentMoniker": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\BlackArm.API.csproj",
+              "DocumentIndex": 6,
+              "Title": "BlackArm.API.csproj",
+              "DocumentMoniker": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\BlackArm.API.csproj",
               "RelativeDocumentMoniker": "BlackArm.API\\BlackArm.API.csproj",
-              "ToolTip": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\BlackArm.API.csproj",
+              "ToolTip": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\BlackArm.API.csproj",
               "RelativeToolTip": "BlackArm.API\\BlackArm.API.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -93,37 +127,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\Program.cs",
               "RelativeDocumentMoniker": "BlackArm.API\\Program.cs",
-              "ToolTip": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\Program.cs",
               "RelativeToolTip": "BlackArm.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAtAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvyEAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T23:50:58.507Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\Extensions\\ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\Extensions\\ServiceExtensions.cs",
               "RelativeDocumentMoniker": "BlackArm.API\\Extensions\\ServiceExtensions.cs",
-              "ToolTip": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\Extensions\\ServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\Extensions\\ServiceExtensions.cs",
               "RelativeToolTip": "BlackArm.API\\Extensions\\ServiceExtensions.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAA5wCwAAAANAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T23:50:27.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "NotEqualAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\Attributes\\NotEqualAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\Attributes\\NotEqualAttribute.cs",
               "RelativeDocumentMoniker": "BlackArm.API\\Attributes\\NotEqualAttribute.cs",
-              "ToolTip": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\Attributes\\NotEqualAttribute.cs",
+              "ToolTip": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\Attributes\\NotEqualAttribute.cs",
               "RelativeToolTip": "BlackArm.API\\Attributes\\NotEqualAttribute.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -132,11 +166,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "FightDto.cs",
-              "DocumentMoniker": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\DTOs\\FightsDto\\FightDto.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\DTOs\\FightsDto\\FightDto.cs",
               "RelativeDocumentMoniker": "BlackArm.API\\DTOs\\FightsDto\\FightDto.cs",
-              "ToolTip": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\DTOs\\FightsDto\\FightDto.cs",
+              "ToolTip": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\DTOs\\FightsDto\\FightDto.cs",
               "RelativeToolTip": "BlackArm.API\\DTOs\\FightsDto\\FightDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -145,11 +179,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "FightForCreatingDto.cs",
-              "DocumentMoniker": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\DTOs\\FightsDto\\FightForCreatingDto.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\DTOs\\FightsDto\\FightForCreatingDto.cs",
               "RelativeDocumentMoniker": "BlackArm.API\\DTOs\\FightsDto\\FightForCreatingDto.cs",
-              "ToolTip": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\DTOs\\FightsDto\\FightForCreatingDto.cs",
+              "ToolTip": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\DTOs\\FightsDto\\FightForCreatingDto.cs",
               "RelativeToolTip": "BlackArm.API\\DTOs\\FightsDto\\FightForCreatingDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -158,24 +192,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "FightRepository.cs",
-              "DocumentMoniker": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Infrastructure\\Repositories\\FightRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\Repositories\\FightRepository.cs",
               "RelativeDocumentMoniker": "BlackArm.Infrastructure\\Repositories\\FightRepository.cs",
-              "ToolTip": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Infrastructure\\Repositories\\FightRepository.cs",
+              "ToolTip": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\Repositories\\FightRepository.cs",
               "RelativeToolTip": "BlackArm.Infrastructure\\Repositories\\FightRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBZwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-17T15:16:21.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "FightController.cs",
-              "DocumentMoniker": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\Controllers\\FightController.cs",
+              "DocumentMoniker": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\Controllers\\FightController.cs",
               "RelativeDocumentMoniker": "BlackArm.API\\Controllers\\FightController.cs",
-              "ToolTip": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\Controllers\\FightController.cs",
+              "ToolTip": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\Controllers\\FightController.cs",
               "RelativeToolTip": "BlackArm.API\\Controllers\\FightController.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAowDcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

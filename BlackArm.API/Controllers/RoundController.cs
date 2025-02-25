@@ -31,7 +31,7 @@ public class RoundController: ControllerBase
         CancellationToken cancellationToken = default)
     {
        var roundDb = await _repository.Round
-           .GetRoundAsync( fightId,roundId, cancellationToken,trackChanges:false);
+           .GetRoundAsync(roundId, cancellationToken,trackChanges:false);
 
        
        var round = _mapper.Map<RoundDto>(roundDb);
@@ -71,11 +71,11 @@ public class RoundController: ControllerBase
     }
 
     [HttpDelete]
-    public async Task<IActionResult> DeleteRoundForFight(Guid fightId,Guid roundId,
+    public async Task<IActionResult> DeleteRoundForFight(Guid roundId,
         CancellationToken cancellationToken = default)
     {
         //var fight = _repository.Fight.GetFightAsync(competitionId,fightId, cancellationToken, trackChanges: false);
-        var roundForFight = await _repository.Round.GetRoundAsync(fightId,roundId, cancellationToken, trackChanges: false);
+        var roundForFight = await _repository.Round.GetRoundAsync(roundId, cancellationToken, trackChanges: false);
         if (roundForFight == null)
         {
             _logger.LogError("Round not found");

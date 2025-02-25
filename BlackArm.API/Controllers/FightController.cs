@@ -29,7 +29,7 @@ public class FightController : ControllerBase
     {
         var competition = await _repository.Competition.GetCompetitionAsync(competitionId, trackChanges: false);
         
-        var fight = await _repository.Fight.GetFightAsync(competitionId, id, cancellationToken, trackChanges: false);
+        var fight = await _repository.Fight.GetFightAsync(id, cancellationToken, trackChanges: false);
         
         var fights = _mapper.Map<FightWithWrestlersNameDto>(fight);
         return Ok(fights);
@@ -66,10 +66,10 @@ public class FightController : ControllerBase
     }
 
     [HttpDelete]
-    public async Task<IActionResult> DeleteFightForCompetition(Guid competitionId, Guid id,
+    public async Task<IActionResult> DeleteFightForCompetition( Guid id,
         CancellationToken cancellationToken)
     {
-        var fight =await _repository.Fight.GetFightAsync(competitionId, id, cancellationToken, trackChanges: false);
+        var fight =await _repository.Fight.GetFightAsync( id, cancellationToken, trackChanges: false);
         if (fight == null)
         {
             _logger.LogError("Fight not found");

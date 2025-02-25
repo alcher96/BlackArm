@@ -335,3 +335,17 @@ C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\obj\Debug\net8.0\BlackArm.API.
 C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\obj\Debug\net8.0\ref\BlackArm.API.dll
 C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.API\obj\Debug\net8.0\BlackArm.API.sourcelink.json
 C:\Users\alche\RiderProjects\BlackArm.API\BlackArm.API\bin\Debug\net8.0\Marvin.Cache.Headers.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\Marvin.Cache.Headers.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Alex\RiderProjects\BlackArm\BlackArm.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

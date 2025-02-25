@@ -19,10 +19,10 @@ public class RoundRepository : RepositoryBase<Round>, IRoundRepository
         return rounds;
     }
 
-    public async Task<Round> GetRoundAsync( Guid fightId, Guid roundId,
+    public async Task<Round> GetRoundAsync(Guid roundId,
         CancellationToken cancellationToken,
         bool trackChanges) =>
-        await FindByCondition(r => r.FightId.Equals(fightId) && r.RoundId.Equals(roundId), trackChanges)
+        await FindByCondition(r => r.RoundId.Equals(roundId), trackChanges)
             .Include(r => r.Winner)
             .Include(r => r.StyleUsed)
             .SingleOrDefaultAsync();

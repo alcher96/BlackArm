@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlackArm.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+870afa17d19e983e00befc9626b9df3a509cff62")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ad887eca8e82284165e38209de58fd2ff7eb6f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlackArm.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlackArm.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

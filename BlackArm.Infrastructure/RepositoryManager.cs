@@ -11,6 +11,7 @@ public sealed class RepositoryManager : IRepositoryManager
 
     private readonly Lazy<IFightRepository> _fightRepository;
     private readonly Lazy<IRoundRepository> _roundRepository;
+    private readonly Lazy<IStyleRepository> _styleRepository;
 
     
     public RepositoryManager( ArmWrestlersDbContext context )
@@ -21,6 +22,7 @@ public sealed class RepositoryManager : IRepositoryManager
 
         _fightRepository = new Lazy<IFightRepository>(() => new FightRepository(context));
         _roundRepository = new Lazy<IRoundRepository>(() => new RoundRepository(context));
+        _styleRepository = new Lazy<IStyleRepository>(() => new WrestlingStyleRepository(context));
 
     }
     
@@ -31,5 +33,7 @@ public sealed class RepositoryManager : IRepositoryManager
     public IFightRepository Fight => _fightRepository.Value;
     
     public IRoundRepository Round => _roundRepository.Value;
+    
+    public IStyleRepository Style => _styleRepository.Value;
     public Task SaveAsync() => _context.SaveChangesAsync();
 }

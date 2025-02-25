@@ -19,9 +19,9 @@ public class FightRepository : RepositoryBase<Fight>, IFightRepository
         return fights;
     }
 
-    public async Task<Fight> GetFightAsync(Guid CompetitionId, Guid FightId, CancellationToken cancellationToken,
+    public async Task<Fight> GetFightAsync(Guid FightId, CancellationToken cancellationToken,
         bool trackChanges) =>
-        await FindByCondition(f => f.CompetitionId.Equals(CompetitionId) && f.FightId.Equals(FightId),
+        await FindByCondition(f =>  f.FightId.Equals(FightId),
                  trackChanges)
             .Include(f => f.Wrestler1)
             .Include(f =>f.Wrestler2)

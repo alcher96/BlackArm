@@ -1,10 +1,11 @@
 using BlackArm.Domain.Models;
 using BlackArm.Infrastructure.Configuration;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlackArm.Infrastructure;
 
-public class ArmWrestlersDbContext : DbContext
+public class ArmWrestlersDbContext : IdentityDbContext<ApplicationUser>
 {
     public ArmWrestlersDbContext(DbContextOptions<ArmWrestlersDbContext> options) : base(options)
     {
@@ -54,7 +55,8 @@ public class ArmWrestlersDbContext : DbContext
         
 
         modelBuilder.ApplyConfiguration(new ArmWrestlerConfiguration());
-
+        modelBuilder.ApplyConfiguration(new CompetitionConfiguration());
+        modelBuilder.ApplyConfiguration(new WrestlingStyleConfiguration ());
         base.OnModelCreating(modelBuilder);
     }
 }

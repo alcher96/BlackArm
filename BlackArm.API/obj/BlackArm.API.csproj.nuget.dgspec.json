@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\BlackArm.API.csproj": {}
+    "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\BlackArm.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\BlackArm.API.csproj": {
+    "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\BlackArm.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\BlackArm.API.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\BlackArm.API.csproj",
         "projectName": "BlackArm.API",
-        "projectPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\BlackArm.API.csproj",
-        "packagesPath": "C:\\Users\\alche\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.API\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\BlackArm.API.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,11 +33,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Domain\\BlackArm.Domain.csproj": {
-                "projectPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Domain\\BlackArm.Domain.csproj"
+              "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Domain\\BlackArm.Domain.csproj": {
+                "projectPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Domain\\BlackArm.Domain.csproj"
               },
-              "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj"
+              "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj"
               }
             }
           }
@@ -60,6 +64,14 @@
             "Marvin.Cache.Headers": {
               "target": "Package",
               "version": "[7.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.12, )"
             },
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
@@ -117,21 +129,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Application\\BlackArm.Application.csproj": {
+    "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Application\\BlackArm.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Application\\BlackArm.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Application\\BlackArm.Application.csproj",
         "projectName": "BlackArm.Application",
-        "projectPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Application\\BlackArm.Application.csproj",
-        "packagesPath": "C:\\Users\\alche\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Application\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Application\\BlackArm.Application.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -146,8 +162,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Domain\\BlackArm.Domain.csproj": {
-                "projectPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Domain\\BlackArm.Domain.csproj"
+              "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Domain\\BlackArm.Domain.csproj": {
+                "projectPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Domain\\BlackArm.Domain.csproj"
               }
             }
           }
@@ -192,21 +208,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Domain\\BlackArm.Domain.csproj": {
+    "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Domain\\BlackArm.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Domain\\BlackArm.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Domain\\BlackArm.Domain.csproj",
         "projectName": "BlackArm.Domain",
-        "projectPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Domain\\BlackArm.Domain.csproj",
-        "packagesPath": "C:\\Users\\alche\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Domain\\BlackArm.Domain.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -253,21 +273,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj": {
+    "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj",
         "projectName": "BlackArm.Infrastructure",
-        "projectPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\alche\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\BlackArm.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -282,11 +306,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Application\\BlackArm.Application.csproj": {
-                "projectPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Application\\BlackArm.Application.csproj"
+              "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Application\\BlackArm.Application.csproj": {
+                "projectPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Application\\BlackArm.Application.csproj"
               },
-              "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Domain\\BlackArm.Domain.csproj": {
-                "projectPath": "C:\\Users\\alche\\RiderProjects\\BlackArm.API\\BlackArm.Domain\\BlackArm.Domain.csproj"
+              "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Domain\\BlackArm.Domain.csproj": {
+                "projectPath": "C:\\Users\\Alex\\RiderProjects\\BlackArm\\BlackArm.Domain\\BlackArm.Domain.csproj"
               }
             }
           }
@@ -310,9 +334,21 @@
               "target": "Package",
               "version": "[6.5.1, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[8.0.12, )"
             }
           },
           "imports": [
@@ -331,7 +367,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

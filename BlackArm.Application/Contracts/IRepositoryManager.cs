@@ -11,5 +11,7 @@ public interface IRepositoryManager
     IFightRepository Fight { get; }
     
     IRoundRepository Round { get; }
+    
+    IStyleRepository Style { get; }
     Task SaveAsync();
 }

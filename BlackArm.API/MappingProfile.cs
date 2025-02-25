@@ -5,7 +5,7 @@ using BlackArm.API.DTOs.CompetitionsDto;
 
 using BlackArm.API.DTOs.FightsDto;
 using BlackArm.API.DTOs.RoundsDto;
-
+using BlackArm.API.DTOs.StylesDto;
 using BlackArm.API.Extensions;
 using BlackArm.Domain.Models;
 
@@ -73,6 +73,14 @@ public class MappingProfile : Profile
        
        
        CreateMap<RoundForCreationDto, Round>();
+
+       CreateMap<WrestlingStyle, WrestlingStyleDto>()
+           .ForMember(dest => dest.StyleId, opt => opt.MapFrom(src => src.StyleId))
+           .ForMember(dest => dest.StyleName, opt => opt.MapFrom(src => src.StyleName));
+
+
+       CreateMap<WrestlingStyleForCreationDto, WrestlingStyle>()
+           .ForMember(dest => dest.StyleName, opt => opt.MapFrom(src => src.StyleName));
 
 
 

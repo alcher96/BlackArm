@@ -3,6 +3,7 @@ using BlackArm.API.ActionFilters;
 using BlackArm.API.DTOs;
 using BlackArm.Application.Contracts;
 using BlackArm.Domain.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Infrastructure;

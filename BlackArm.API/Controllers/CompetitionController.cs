@@ -28,6 +28,7 @@ public class CompetitionController : ControllerBase
     }
 
     [HttpGet]
+    [ResponseCache(Duration = 60)]
     public async Task<IActionResult> GetCompetitions()
     {
         var competition =await _repository.Competition.GetCompetitionsAsync(cancelationToken:default, trackChanges:false);
@@ -59,6 +60,7 @@ public class CompetitionController : ControllerBase
     }
 
     [HttpPut("{id}")]
+    
     public async Task<IActionResult> UpdateCompetition(Guid id, [FromBody] ComtetitionForUpdateDto updateDto)
     {
         var competitionEntity = await _repository.Competition.GetCompetitionAsync(id, trackChanges:true);
@@ -66,5 +68,19 @@ public class CompetitionController : ControllerBase
         await _repository.SaveAsync();
         return NoContent();
         
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteCompetition(Guid id)
+    {
+        var competition = await _repository.Competition.GetCompetitionAsync(id, trackChanges:true);
+        if (competition == null)
+        {
+            _logger.LogError($"Competition with id: {id} not found");
+            
+        }
+        _repository.Competition.RemoveCompetition(competition);
+        _repository.SaveAsync();
+        return NoContent();
     }
 }
