@@ -7,6 +7,7 @@ using BlackArm.API.DTOs.FightsDto;
 using BlackArm.API.DTOs.RoundsDto;
 using BlackArm.API.DTOs.StylesDto;
 using BlackArm.API.Extensions;
+using BlackArm.Application.Paging;
 using BlackArm.Domain.Models;
 
 namespace BlackArm.API;
@@ -15,15 +16,8 @@ public class MappingProfile : Profile
 {
     public MappingProfile()
     {
-        CreateMap<ArmWrestler,ArmWrestlerDto>()
-            .ForMember(a => a.FullName,
-                opt =>
-                    opt.MapFrom(src => $"{src.FirstName} {src.LastName}"))
-            .ForMember(dest => dest.Age, 
-                opt => 
-                    opt.MapFrom(src => src.BirthDate.CalculateAge()))
-            .ForMember(dest => dest.WinRate, opt =>
-                opt.MapFrom(src => src.Wins.CalculateWinRate(src.Losses)));
+        CreateMap<ArmWrestler, ArmWrestlerDto>();
+            
 
         CreateMap<ArmWrestlerForCreationDto, ArmWrestler>();
         CreateMap<ArmWrestlerForUpdateDto, ArmWrestler>();
@@ -32,6 +26,15 @@ public class MappingProfile : Profile
        CreateMap<Competition, CompetitionDto>();
        CreateMap<CompetitionForCreationDto, Competition>();
        CreateMap<ComtetitionForUpdateDto, Competition>();
+       
+       // Маппинг PagedList<Competition> -> IEnumerable<CompetitionDto>
+       CreateMap<PagedList<Competition>, IEnumerable<CompetitionDto>>()
+           .ConvertUsing(src => src.Items.Select(item => new CompetitionDto
+           {
+               CompetitionId = item.CompetitionId,
+               CompetitionName = item.CompetitionName,
+               CompetitionDate = item.CompetitionDate
+           }));
 
        
        // Mapping from Fight to FightDto

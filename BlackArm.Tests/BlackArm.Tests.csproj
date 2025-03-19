@@ -22,8 +22,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\BlackArm.API\BlackArm.API.csproj" />
-      <ProjectReference Include="..\BlackArm.Application\BlackArm.Application.csproj" />
+      <ProjectReference Include="..\BlackArm.Domain\BlackArm.Domain.csproj" />
+      <ProjectReference Include="..\BlackArm.Infrastructure\BlackArm.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

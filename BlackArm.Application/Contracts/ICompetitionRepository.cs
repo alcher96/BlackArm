@@ -1,10 +1,11 @@
+using BlackArm.Application.Paging;
 using BlackArm.Domain.Models;
 
 namespace BlackArm.Application.Contracts;
 
 public interface ICompetitionRepository
 {
-    Task<IEnumerable<Competition>> GetCompetitionsAsync( CancellationToken cancelationToken,bool trackChanges);
+    Task<PagedList<Competition>> GetCompetitionsAsync(CompetitionParameters competitionParameters, CancellationToken cancelationToken,bool trackChanges);
     
     Task<Competition> GetCompetitionAsync(Guid competitionId, bool trackChanges);
     

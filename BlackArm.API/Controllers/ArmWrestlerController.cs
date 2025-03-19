@@ -2,28 +2,38 @@ using AutoMapper;
 using BlackArm.API.ActionFilters;
 using BlackArm.API.DTOs;
 using BlackArm.Application.Contracts;
+using BlackArm.Application.PhotoService.ArmWrestler.Profile;
 using BlackArm.Domain.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Newtonsoft.Json;
 
 namespace BlackArm.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-[ResponseCache(CacheProfileName = "120SecondsDuration")]
+//[ResponseCache(CacheProfileName = "120SecondsDuration")]
 public class ArmWrestlerController : ControllerBase
 {
     private readonly IRepositoryManager _repository;
     private readonly IMapper _mapper;
     private readonly ILoggerManager _logger;
+    private readonly IWebHostEnvironment _webHostEnvironment;
+    private readonly IPhotoService _photoService;
 
-    public ArmWrestlerController(IRepositoryManager repository, IMapper mapper, ILoggerManager logger)
+    public ArmWrestlerController(IRepositoryManager repository,
+        IMapper mapper, 
+        ILoggerManager logger,
+        IWebHostEnvironment webHostEnvironment,
+        IPhotoService photoService)
     {
         _repository = repository;
         _mapper = mapper;
         _logger = logger;
+        _webHostEnvironment = webHostEnvironment;
+        _photoService = photoService;
     }
 
     [HttpGet]
@@ -36,7 +46,6 @@ public class ArmWrestlerController : ControllerBase
     }
 
     [HttpGet("{id}", Name = "ArmWrestlerById")]
-    [ServiceFilter(typeof(ValidateArmwrestlerExistsAttribute))]
     public async Task<IActionResult> GetArmWrestlerById(Guid id)
     {
         var armWrestler = await _repository.ArmWrestler.GetWrestlerAsync(id, trackChanges:false);
@@ -65,10 +74,22 @@ public class ArmWrestlerController : ControllerBase
     [ServiceFilter(typeof(ValidateArmwrestlerExistsAttribute))]
     public async Task<IActionResult> UpdateArmWrestler(Guid id, [FromBody] ArmWrestlerForUpdateDto armWrestler)
     {
-        var armWrestlerEntity = await _repository.ArmWrestler.GetWrestlerAsync(id, trackChanges:true);
-        // var armWrestlerEntity = HttpContext.Items["armWrestler"] as ArmWrestler;
+        _logger.LogInfo($"Received PUT request for ID: {id}, Data: {JsonConvert.SerializeObject(armWrestler)}" );
+
+        var armWrestlerEntity = await _repository.ArmWrestler.GetWrestlerAsync(id, trackChanges: true);
+        if (armWrestlerEntity == null)
+        {
+            _logger.LogWarning($"ArmWrestler with ID {id} not found.");
+            return NotFound();
+        }
+
         _mapper.Map(armWrestler, armWrestlerEntity);
+        _logger.LogInfo($"Mapped entity: {JsonConvert.SerializeObject(armWrestlerEntity)}");
+
+        _repository.ArmWrestler.UpdateWrestler(armWrestlerEntity); // Явно вызываем обновление
         await _repository.SaveAsync();
+
+        _logger.LogInfo("ArmWrestler updated successfully.");
         return NoContent();
     }
 
@@ -83,4 +104,55 @@ public class ArmWrestlerController : ControllerBase
         _repository.SaveAsync();
         return NoContent();
     }
+    
+    [HttpPost("{userId}/photo")]
+    public async Task<IActionResult> UploadPhoto(Guid userId, IFormFile photo)
+    {
+        try
+        {
+            var photoPath = await _photoService.UploadPhotoAsync(userId, photo, _webHostEnvironment.ContentRootPath);
+            return Ok(new { PhotoPath = photoPath });
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(ex.Message);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return NotFound(ex.Message);
+        }
+    }
+   
+    [HttpGet("{userId}/photo")]
+    public async Task<IActionResult> GetPhotoMetadata(Guid userId)
+    {
+        try
+        {
+            var photoPath = await _photoService.GetPhotoPathAsync(userId);
+            return Ok(new { PhotoPath = photoPath });
+        }
+        catch (InvalidOperationException ex)
+        {
+            return NotFound(ex.Message);
+        }
+    }
+   
+    [HttpGet("{userId}/photo/file")]
+    public async Task<IActionResult> GetPhotoFile(Guid userId)
+    {
+        try
+        {
+            var (fileResult, fileName) = await _photoService.GetPhotoFileAsync(userId, _webHostEnvironment.ContentRootPath);
+            return File(fileResult.FileStream, fileResult.ContentType, fileName);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return NotFound(ex.Message);
+        }
+        catch (FileNotFoundException ex)
+        {
+            return NotFound(ex.Message);
+        }
+    }
+    
 }

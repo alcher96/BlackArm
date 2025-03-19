@@ -27,4 +27,18 @@ public class ArmWrestlerForCreationDto
     public int Wins { get; set; }
     
     public int Losses { get; set; }
+    
+    public int SidePressure { get; set; }
+    
+
+    public int Wrist  { get; set; }
+    
+
+    public int Angle { get; set; }
+    
+
+    public int Stamina { get; set; }
+    
+  
+    public int Pronaton { get; set; }
 }

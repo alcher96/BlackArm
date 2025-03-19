@@ -21,7 +21,13 @@ public class RepositoryBase<T> : IRepositoryBase<T> where T : class
     : _context.Set<T>().Where(expression);
 
 
-    public IQueryable<T> FindAll(bool trackChanges) => _context.Set<T>();
+    public IQueryable<T> FindAll(bool trackChanges)
+    {
+        var query = _context.Set<T>().AsQueryable();
+        if (!trackChanges)
+            query = query.AsNoTracking();
+        return query;
+    }
     public void Create(T entity) => _context.Set<T>().Add(entity);
     public void Update(T entity) => _context.Set<T>().Update(entity);
     public void Delete(T entity) => _context.Set<T>().Remove(entity);

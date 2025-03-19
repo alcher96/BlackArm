@@ -4,7 +4,9 @@ public class ArmWrestlerDto
 {
     public Guid ArmWrestlerId { get; set; }
     
-    public string FullName { get; set; }
+    public string FirstName { get; set; }
+    
+    public string LastName { get; set; }
     
     public string NickName { get; set; }
     
@@ -23,9 +25,23 @@ public class ArmWrestlerDto
     
     public int Losses { get; set; }
     
-    public int WinRate { get; set; }
     
-    public int Age { get; set; }
+
+    public int SidePressure { get; set; }
+    
+
+    public int Wrist  { get; set; }
+    
+
+    public int Angle { get; set; }
+    
+
+    public int Stamina { get; set; }
+    
+  
+    public int Pronaton { get; set; }
+    
+    public string? PhotoPath { get; set; } // Путь к фото на сервере
     
     
     public DateTimeOffset BirthDate { get; set; }

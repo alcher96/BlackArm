@@ -40,6 +40,22 @@ public class ArmWrestler
     
     public int Losses { get; set; }
     
+    [Range(1, 10)]
+    public int SidePressure { get; set; }
+    
+    [Range(1, 10)]
+    public int Wrist  { get; set; }
+    
+    [Range(1, 10)]
+    public int Angle { get; set; }
+    
+    [Range(1, 10)]
+    public int Stamina { get; set; }
+    
+    [Range(1, 10)]
+    public int Pronaton { get; set; }
+    
+    public string? PhotoPath { get; set; } // Путь к фото на сервере
     
     // Navigation properties for relationships (optional, but useful for querying)
     [InverseProperty("Wrestler1")]

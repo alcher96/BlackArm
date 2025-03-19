@@ -3,8 +3,10 @@ using BlackArm.API.ActionFilters;
 using BlackArm.API.AuthenticationService;
 using BlackArm.API.Extensions;
 using BlackArm.Application.AuthenticationService;
+using BlackArm.Application.Cache;
 using BlackArm.Application.Contracts;
 using BlackArm.Application.LoggerService;
+using BlackArm.Application.PhotoService.ArmWrestler.Profile;
 using BlackArm.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -13,11 +15,18 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using NLog;
 using NLog.Extensions.Logging;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
+
+builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
+{
+    var configuration = ConfigurationOptions.Parse(builder.Configuration["Redis:ConnectionString"], true);
+    return ConnectionMultiplexer.Connect(configuration);
+});
 
 builder.Services.ConfigureCors();
 builder.Services.ConfigureRepositoryManager();
@@ -32,6 +41,8 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddDefaultTokenProviders();
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IPhotoService, PhotoService>();
+builder.Services.AddScoped<ICacheService, CacheService>();
 
 
 builder.Services.AddAuthentication(options =>
@@ -55,8 +66,8 @@ builder.Services.AddAuthentication(options =>
 
 
 builder.Services.ConfigureHttpCacheHeaders();
-builder.Services.AddMemoryCache(); // Добавляем сервис кэширования в памяти
-builder.Services.ConfigureResponseCaching();
+//builder.Services.AddMemoryCache(); // Добавляем сервис кэширования в памяти
+//builder.Services.ConfigureResponseCaching();
 builder.Services.AddControllers(config =>
 {
     config.RespectBrowserAcceptHeader = true;
@@ -95,8 +106,8 @@ app.UseHttpsRedirection();
 app.UseCors("CorsPolicy");
 
 app.UseRouting();
-app.UseResponseCaching();
-app.UseHttpCacheHeaders();
+//app.UseResponseCaching();
+//app.UseHttpCacheHeaders();
 app.UseForwardedHeaders(new ForwardedHeadersOptions
 {
     ForwardedHeaders = ForwardedHeaders.All

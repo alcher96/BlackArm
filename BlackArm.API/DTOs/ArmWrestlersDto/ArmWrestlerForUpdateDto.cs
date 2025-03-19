@@ -6,7 +6,6 @@ public class ArmWrestlerForUpdateDto
     public string FirstName { get; set; }
     
     public string LastName { get; set; }
-    
    
     public string NickName { get; set; }
 
@@ -28,5 +27,21 @@ public class ArmWrestlerForUpdateDto
     public int Wins { get; set; }
     
     public int Losses { get; set; }
+    
+    public int SidePressure { get; set; }
+    
+
+    public int Wrist  { get; set; }
+    
+
+    public int Angle { get; set; }
+    
+
+    public int Stamina { get; set; }
+    
+  
+    public int Pronaton { get; set; }
+   
+    public string? PhotoPath { get; set; } // Путь к фото на сервере
     
 }
